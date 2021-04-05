@@ -7,10 +7,15 @@
     <IsPackable>false</IsPackable>
     <SpaRoot>clientside\</SpaRoot>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="moq" Version="4.16.1" />
   </ItemGroup>
 
   <ItemGroup>
