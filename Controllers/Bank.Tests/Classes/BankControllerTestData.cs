@@ -16,4 +16,18 @@ namespace ServersideTests.Test.Unit
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
     }
 
+    public class BankControllerTestDataFail : IEnumerable<object[]>
+    {
+        public IEnumerator<object[]> GetEnumerator()
+        {
+            yield return new object[] { "abc" };
+            yield return new object[] { "1a" };
+            yield return new object[] { "1.a" };
+            yield return new object[] { "0mama" };
+            yield return new object[] { "0.123a" };
+        }
+
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+    }
+
 }

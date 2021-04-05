@@ -33,7 +33,7 @@ namespace TechOne.Controllers
                 }
                 
                 Response.StatusCode = 400;
-                return null;
+                throw new ArgumentException();
             } 
 
             // Dollars and cents.
@@ -48,7 +48,7 @@ namespace TechOne.Controllers
             }
 
             Response.StatusCode = 400;
-            return null;
+            throw new ArgumentException();
         }
     }
 }
